@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Monitor</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1130</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNarzedzia">
+    <property name="title">
+     <string>Narzedzia</string>
+    </property>
+    <addaction name="actionPo_cz"/>
+    <addaction name="actionInternet"/>
+   </widget>
+   <widget class="QMenu" name="menuO_Autorze">
+    <property name="title">
+     <string>O programie</string>
+    </property>
+    <addaction name="actionO_Autorze"/>
+   </widget>
+   <widget class="QMenu" name="menuOpcje">
+    <property name="title">
+     <string>Opcje</string>
+    </property>
+    <addaction name="actionKolejno"/>
+    <addaction name="actionWideo_Stream"/>
+   </widget>
+   <addaction name="menuNarzedzia"/>
+   <addaction name="menuOpcje"/>
+   <addaction name="menuO_Autorze"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionPo_cz">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Połącz/Szukaj</string>
+   </property>
+  </action>
+  <action name="actionInternet">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Internet</string>
+   </property>
+  </action>
+  <action name="actionO_Autorze">
+   <property name="text">
+    <string>O Autorze</string>
+   </property>
+  </action>
+  <action name="actionKolejno">
+   <property name="text">
+    <string>Kolejność</string>
+   </property>
+  </action>
+  <action name="actionWideo_Stream">
+   <property name="text">
+    <string>Wideo/Stream</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
